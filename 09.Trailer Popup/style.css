@@ -1,0 +1,87 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.image-container {
+  background-image: url(./assets/background.jpg);
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+img {
+  position: absolute;
+  bottom: 75px;
+  right: 75px;
+  width: 100px;
+  cursor: pointer;
+  animation-name: bounce;
+  animation-duration: 1s;
+  animation-timing-function: ease-in;
+  animation-iteration-count: infinite;
+}
+
+img:hover {
+  color: #fe5701;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+    animation-timing-function: ease-out;
+  }
+  50% {
+    transform: translateY(-20px);
+    animation-timing-function: ease-in;
+  }
+  100% {
+    transform: translateY(0);
+    animation-timing-function: ease-out;
+  }
+}
+
+.trailer-container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: black;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 1;
+  transition: opacity 0.7s ease-in-out;
+}
+
+.trailer-container video {
+  position: relative;
+  width: 100%;
+  outline: none;
+}
+
+.close-icon {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  color: white;
+  font-size: 40px;
+  cursor: pointer;
+  transform: rotate(45deg);
+  transition: 0.25s ease-in-out;
+}
+
+.close-icon:hover {
+  color: FE5701;
+}
+/* JavaScript class */
+
+.active.trailer-container {
+  visibility: hidden;
+  opacity: 0;
+}
