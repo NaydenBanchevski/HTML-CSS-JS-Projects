@@ -1,0 +1,34 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.background {
+  background-image: url(https://img.freepik.com/free-photo/los-angeles-downtown-buildings-night_649448-298.jpg?t=st=1721075062~exp=1721078662~hmac=dcb628b9a94ab3881fa754c999539d19994e31d1d07d1a97d8d0f827306cf288&w=900);
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  position: absolute;
+  top: -30px;
+  left: -30px;
+  width: calc(100vw + 60px);
+  height: calc(100vh + 60px);
+  z-index: -1;
+  filter: blur(0);
+}
+
+.loading-text {
+  font-size: 50px;
+  color: white;
+}
