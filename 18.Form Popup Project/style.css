@@ -1,0 +1,143 @@
+:root {
+  --modal-duration: 1s;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  margin: 0;
+  transition: transform 0.3s ease;
+}
+
+header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.49), rgba(0, 0, 6, 0.469)),
+    url(https://img.freepik.com/free-photo/view-starry-night-sky-with-nature-mountains-landscape_23-2151614751.jpg?t=st=1721076855~exp=1721080455~hmac=5ec9c875fb7d09456e211f3fdb4dfb43e38e70be840bca6da504d6853b205303&w=900);
+  display: flex;
+  position: absolute;
+  left: -30px;
+  right: -30px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.content-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+.content-container h1 {
+  font-size: 4rem;
+  color: white;
+}
+
+.content-container p {
+  color: white;
+  width: 800px;
+  text-align: center;
+  margin: 40px;
+  line-height: 24px;
+}
+
+.cta-btn {
+  background: purple;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.2rem;
+  font-weight: 800;
+}
+
+.cta-btn:focus {
+  outline: none;
+}
+.modal-container {
+  display: none;
+  background-color: rgba(0, 0, 0, 0.6);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.modal {
+  position: absolute;
+  background: #fff;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 100%;
+  width: 400px;
+}
+
+.modal-content {
+  padding: 20px;
+}
+.modal-form div {
+  margin: 20px 0;
+}
+
+.modal-form label {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 14px;
+}
+
+.modal-form .form-input {
+  padding: 8px;
+  width: 100%;
+  border: 1px solid rgba(0, 0, 0, 0.356);
+  border-radius: 5px;
+}
+
+.modal-form input:focus {
+  outline: none;
+  border: 1px solid purple;
+}
+.modal-form input:focus::placeholder {
+  color: transparent;
+}
+
+.close-btn {
+  background: transparent;
+  font-weight: bolder;
+  font-size: 15px;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  transition: 0.3s;
+}
+
+.close-btn:hover {
+  color: purple;
+}
+
+.submit-btn {
+  background: purple;
+  color: white;
+  border: none;
+  padding: 10px 30px;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  font-weight: 900;
+}
+
+.modal-container.show-modal {
+  display: block;
+}
