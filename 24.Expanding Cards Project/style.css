@@ -1,0 +1,78 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: rgb(5, 5, 5);
+}
+
+.container {
+  display: flex;
+  width: 100vw;
+  color: white;
+  margin: 20px;
+}
+
+.bg-image {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.image-1 {
+  background-image: url(./assets/cyberpunk-man-warrior-portrait.jpg);
+}
+
+.image-2 {
+  background-image: url(./assets/digital-art-selected.jpg);
+}
+
+.image-3 {
+  background-image: url(./assets/futuristic-adult-virtual-reality-handsfree-headset-generated-by-ai.jpg);
+}
+
+.image-4 {
+  background-image: url(./assets/neon-abstract-background-design.jpg);
+}
+
+.image-5 {
+  background-image: url(./assets/rise-humanoids-with-advanced-headgear-generative-ai.jpg);
+}
+
+.slide {
+  position: relative;
+  height: 80vh;
+  flex: 0.5;
+  border-radius: 50px;
+  color: white;
+  margin: 10px;
+  cursor: pointer;
+  transition: all 700ms ease-in;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slide h3 {
+  text-align: center;
+  margin: 0;
+  opacity: 0;
+  font-size: 40px;
+}
+
+.slide.active {
+  flex: 5;
+  transition: 0.2s ease-in-out;
+}
+
+.slide.active h3 {
+  opacity: 1;
+  transition: opacity 1s ease-in 0.2s;
+}
