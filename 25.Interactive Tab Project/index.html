@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Interactive Tab Project</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="tabs-container">
+        <button class="btn"><a href="#item-1" class="active">HTML</a></button>
+        <button class="btn"><a href="#item-2">CSS</a></button
+        ><button class="btn"><a href="#item-3">JavaScript</a></button>
+        <button class="btn"><a href="#item-4">REACT</a></button
+        ><button class="btn"><a href="#item-5">NODE</a></button>
+      </div>
+      <div class="content-container">
+        <div class="text-container visible" id="item-1">
+          <h3 class="header">HTML</h3>
+          <p>
+            HyperText Markup Language (HTML) is the set of markup symbols or
+            codes inserted into a file intended for display on the internet. The
+            markup tells web browsers how to display a webpage’s words and
+            images.
+          </p>
+        </div>
+        <div class="text-container" id="item-2">
+          <h3 class="header">CSS</h3>
+          <p>
+            Cascading Style Sheets (CSS) is a style sheet language used for
+            specifying the presentation and styling of a document written in a
+            markup language such as HTML or XML (including XML dialects such as
+            SVG, MathML or XHTML). CSS is a cornerstone technology of the World
+            Wide Web, alongside HTML and JavaScript.
+          </p>
+        </div>
+        <div class="text-container" id="item-3">
+          <h3 class="header">JavaScript</h3>
+          <p>
+            JavaScript is a dynamic programming language that's used for web
+            development, in web applications, for game development, and lots
+            more. It allows you to implement dynamic features on web pages that
+            cannot be done with only HTML and CSS.
+          </p>
+        </div>
+        <div class="text-container" id="item-4">
+          <h3 class="header">REACT</h3>
+          <p>
+            React is a JavaScript-based UI development library. Although React
+            is a library rather than a language, it is widely used in web
+            development. The library first appeared in May 2013 and is now one
+            of the most commonly used frontend libraries for web development.
+          </p>
+        </div>
+        <div class="text-container" id="item-5">
+          <h3 class="header">NODE</h3>
+          <p>
+            Node.js is an open-source and cross-platform JavaScript runtime
+            environment. It is a popular tool for almost any kind of project!
+            Node.js runs the V8 JavaScript engine, the core of Google Chrome,
+            outside of the browser. This allows Node.js to be very performant.
+          </p>
+        </div>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
