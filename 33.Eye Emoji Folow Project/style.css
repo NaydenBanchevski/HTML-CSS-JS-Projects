@@ -8,6 +8,8 @@ body {
   height: 100vh;
   background: firebrick;
   user-select: none;
+  font-family: sans-serif;
+  flex-direction: column;
 }
 
 .emoji-face {
@@ -19,11 +21,12 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: transform 0.3s;
+  transition: 0.3s ease-in-out;
+  transform: scale(10%);
 }
 
 .click {
-  transform: scale(120%) rotate(1800deg);
+  transform: scale(100%) rotate(1800deg);
 }
 
 .emoji-face::before {
@@ -63,5 +66,28 @@ body {
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  background-color: black;
+  background-color: #333;
+}
+
+.project-window {
+  width: 500px;
+  background-color: gold;
+  border-radius: 10px;
+  flex-direction: column;
+  padding: 20px;
+  color: #333;
+  margin: 50px;
+  display: none;
+  opacity: 0;
+  transition: 0.5s ease-in-out;
+}
+
+.project-window h1 {
+  margin-bottom: 10px;
+  transition: 0.5s ease-in-out;
+}
+
+.active {
+  display: flex;
+  opacity: 1;
 }

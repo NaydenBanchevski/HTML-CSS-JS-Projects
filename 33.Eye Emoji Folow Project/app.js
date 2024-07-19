@@ -1,5 +1,6 @@
 document.querySelector("body").addEventListener("mousemove", eyeball);
 const emoji = document.querySelector(".emoji-face");
+const project = document.querySelector(".project-window");
 
 function eyeball() {
   let eyes = document.querySelectorAll(".eye");
@@ -14,4 +15,5 @@ function eyeball() {
 
 emoji.addEventListener("click", () => {
   emoji.classList.toggle("click");
+  project.classList.toggle("active");
 });
