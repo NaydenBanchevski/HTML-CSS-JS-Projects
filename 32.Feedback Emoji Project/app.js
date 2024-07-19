@@ -3,9 +3,7 @@ const ratingsContainer = document.querySelector(".rating-container");
 const sendBtn = document.querySelector(".btn");
 const panel = document.querySelector("#panel");
 
-console.log(panel);
-
-let selectedRating = "Satisfied";
+let selectedRating = "";
 
 ratingsContainer.addEventListener("click", (e) => {
   if (e.target.parentNode.classList.contains("rating")) {
@@ -28,5 +26,3 @@ function removeActives() {
     ratings[i].classList.remove("active");
   }
 }
-
-console.log(ratingsContainer);
